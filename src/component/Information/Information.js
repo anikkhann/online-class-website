@@ -5,11 +5,11 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 
 const Information = (props) => {
-    const {name, img, price, id, teacher, email} = props.course;
+    const {name, img, price, id, teacher, email} = props.course;//using destructure get name... values from course using props(property)
     return (
         <div className="information-container">
-            <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <img src={img} alt=""/>
+            <div>
+                <img src={img} alt=""/>       {/*showing name img idprice etc using dynamic structure*/}
             </div>
 
             <div className="information">
@@ -18,7 +18,10 @@ const Information = (props) => {
                 <h6>Price: {price}</h6>
                 <h6>Course Taken By: {teacher}</h6>
                 <h6>Teacher Email: {email}</h6>
-                <button className="btn btn-success" onClick={(() => props.handleAddCart(props.course))}><FontAwesomeIcon icon={faCartPlus} /> Enroll Now</button>
+                <button className="btn btn-success"
+                 onClick={(() => props.handleAddCart(props.course))}>
+                <FontAwesomeIcon icon={faCartPlus} /> Enroll Now
+                </button>
             </div>
         </div>
     );
