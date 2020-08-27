@@ -1,0 +1,10 @@
+.course-container{
+    display: flex;
+}
+.course-data{
+    width: 70%;
+    border-right: 1px solid gray;
+    border-style: hidden;
+    margin-left: 20px;
+    margin-right: 5px;
+}

@@ -1,0 +1,19 @@
+.information-container img{
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+
+}
+.information-container{
+    display: flex;
+    border-bottom: 1px solid gray;
+    border-style: hidden;
+}
+.information{
+    margin-left: 130px;
+}
+.information button{
+    cursor: pointer;
+}
